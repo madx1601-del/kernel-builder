@@ -9,7 +9,7 @@ on:
       kernel_branch:
         description: 'Kernel branch to build (leave empty for default branch)'
         required: false
-        default: 'pipa-vega'
+        default: 'pipa-bpf'
 
 jobs:
   build:
