@@ -10,7 +10,7 @@ on:
       kernel_branch:
         description: 'Kernel branch to build (leave empty for default branch)'
         required: false
-        default: 'walt_uclamp'
+        default: 'metis_re'
 
 jobs:
   build:
@@ -67,7 +67,7 @@ jobs:
       run: |
         BRANCH="${{ github.event.inputs.kernel_branch }}"
         if [ -z "$BRANCH" ]; then
-          BRANCH="walt_uclamp"
+          BRANCH="metis_re"
         fi
         echo "Building branch: $BRANCH"
         REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/MaDxCRaZY/vega_kernel_pipa.git"
